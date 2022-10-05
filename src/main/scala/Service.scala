@@ -9,6 +9,8 @@ class Service[F[_]: Sync]() extends Http4sDsl[F] {
   //main.start()
 
   val routes: HttpRoutes[F] = HttpRoutes.of[F] {
-    case GET -> Root => Ok(main.readAllDB())
+    case GET -> Root => Ok(main.readAllWorklist())
+    case GET -> Root / "employee" => Ok(main.readAllEmployee())
+    case GET -> Root / "company" => Ok(main.readAllCompany())
   }
 }
