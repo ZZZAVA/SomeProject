@@ -27,14 +27,18 @@ Task below
 
 
 ======================================================================
+
 Steps:
+
 1.Run docker in project package
+
 2.In "main" run def main
+
 3.Run server
 
 links for requests:
 
-localhost:8080 //Get worklist(id,CompanyId, EmployeeId)
+localhost:8080          //Get worklist(id,CompanyId, EmployeeId)
 
 localhost:8080/employee //Get employee(id,name)
 
